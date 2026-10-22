@@ -1,0 +1,361 @@
+[ @file = "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [WatchUi,3,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc"; @line = 5; @symbol_classdef = [HCI_GOLFView,5,6,18]; @symbol_extends<0> = [WatchUi,5,27,34]; @symbol_extends<1> = [View,5,35,39]; ]
+class HCI_GOLFView extends WatchUi.View {
+    [ @file = "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc"; @line = 7; @symbol_functiondef = [initialize,7,13,23]; ]
+    function initialize() as Void {
+C__Users_Eduardo_Documents_PROJECT_HCI_GOLF_source_HCI_GOLFView_mc_7_26_9_4_start:
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 8 8 ]
+        symbol [ View %tmp.2 8 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 8 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__Users_Eduardo_Documents_PROJECT_HCI_GOLF_source_HCI_GOLFView_mc_7_26_9_4_stop:
+    }
+    [ @file = "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc"; @line = 11; @symbol_functiondef = [onUpdate,11,13,21]; @symbol_param<0> = [dc,11,22,24]; @symbol_param<0>_type<0> = [Dc,11,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+C__Users_Eduardo_Documents_PROJECT_HCI_GOLF_source_HCI_GOLFView_mc_11_40_89_4_start:
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 12 8 ]
+        [ "C__Users_Eduardo_Documents_PROJECT_HCI_GOLF_source_HCI_GOLFView_mc_11_40_89_4_start" "C__Users_Eduardo_Documents_PROJECT_HCI_GOLF_source_HCI_GOLFView_mc_11_40_89_4_stop" ]
+        %w.1 = local;
+        symbol [ w %w.1 12 12 13 ];
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 12 16 18 ];
+        symbol [ getWidth %tmp.2 12 19 27 ];
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %w.1 %tmp.3;
+        symbol [ w %w.1 12 12 13 ];
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 13 8 ]
+        [ "C__Users_Eduardo_Documents_PROJECT_HCI_GOLF_source_HCI_GOLFView_mc_11_40_89_4_start" "C__Users_Eduardo_Documents_PROJECT_HCI_GOLF_source_HCI_GOLFView_mc_11_40_89_4_stop" ]
+        %col.2 = local;
+        symbol [ col %col.2 13 12 15 ];
+        %tmp.4 = lgetv %w.1;
+        symbol [ w %tmp.4 13 18 19 ];
+        %tmp.5 = 3;
+        %tmp.6 = div %tmp.4 %tmp.5;
+        lputv %col.2 %tmp.6;
+        symbol [ col %col.2 13 12 15 ];
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 15 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 15 8 10 ];
+        symbol [ setColor %tmp.8 15 11 19 ];
+        %tmp.8 = getv function %tmp.7 :setColor;
+        symbol [ Graphics %tmp.9 15 20 28 ];
+        %tmp.9 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.10 15 29 40 ];
+        %tmp.10 = getv %tmp.9 :COLOR_WHITE;
+        symbol [ Graphics %tmp.11 15 42 50 ];
+        %tmp.11 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.12 15 51 62 ];
+        %tmp.12 = getv %tmp.11 :COLOR_BLACK;
+        invoke %tmp.7 %tmp.8(%tmp.10, %tmp.12);
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 16 8 ]
+        %tmp.13 = lgetv %dc;
+        symbol [ dc %tmp.13 16 8 10 ];
+        symbol [ clear %tmp.14 16 11 16 ];
+        %tmp.14 = getv function %tmp.13 :clear;
+        invoke %tmp.13 %tmp.14();
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 18 8 ]
+        [ "C__Users_Eduardo_Documents_PROJECT_HCI_GOLF_source_HCI_GOLFView_mc_11_40_89_4_start" "C__Users_Eduardo_Documents_PROJECT_HCI_GOLF_source_HCI_GOLFView_mc_11_40_89_4_stop" ]
+        %hole.3 = local;
+        symbol [ hole %hole.3 18 12 16 ];
+        %tmp.15 = "1";
+        lputv %hole.3 %tmp.15;
+        symbol [ hole %hole.3 18 12 16 ];
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 19 8 ]
+        [ "C__Users_Eduardo_Documents_PROJECT_HCI_GOLF_source_HCI_GOLFView_mc_11_40_89_4_start" "C__Users_Eduardo_Documents_PROJECT_HCI_GOLF_source_HCI_GOLFView_mc_11_40_89_4_stop" ]
+        %direction.4 = local;
+        symbol [ direction %direction.4 19 12 21 ];
+        %tmp.16 = "NW";
+        lputv %direction.4 %tmp.16;
+        symbol [ direction %direction.4 19 12 21 ];
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 20 8 ]
+        [ "C__Users_Eduardo_Documents_PROJECT_HCI_GOLF_source_HCI_GOLFView_mc_11_40_89_4_start" "C__Users_Eduardo_Documents_PROJECT_HCI_GOLF_source_HCI_GOLFView_mc_11_40_89_4_stop" ]
+        %front.5 = local;
+        symbol [ front %front.5 20 12 17 ];
+        %tmp.17 = "235";
+        lputv %front.5 %tmp.17;
+        symbol [ front %front.5 20 12 17 ];
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 21 8 ]
+        [ "C__Users_Eduardo_Documents_PROJECT_HCI_GOLF_source_HCI_GOLFView_mc_11_40_89_4_start" "C__Users_Eduardo_Documents_PROJECT_HCI_GOLF_source_HCI_GOLFView_mc_11_40_89_4_stop" ]
+        %center.6 = local;
+        symbol [ center %center.6 21 12 18 ];
+        %tmp.18 = "250";
+        lputv %center.6 %tmp.18;
+        symbol [ center %center.6 21 12 18 ];
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 22 8 ]
+        [ "C__Users_Eduardo_Documents_PROJECT_HCI_GOLF_source_HCI_GOLFView_mc_11_40_89_4_start" "C__Users_Eduardo_Documents_PROJECT_HCI_GOLF_source_HCI_GOLFView_mc_11_40_89_4_stop" ]
+        %back.7 = local;
+        symbol [ back %back.7 22 12 16 ];
+        %tmp.19 = "267";
+        lputv %back.7 %tmp.19;
+        symbol [ back %back.7 22 12 16 ];
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 25 8 ]
+        %tmp.20 = lgetv %dc;
+        symbol [ dc %tmp.20 25 8 10 ];
+        symbol [ setColor %tmp.21 25 11 19 ];
+        %tmp.21 = getv function %tmp.20 :setColor;
+        symbol [ Graphics %tmp.22 25 20 28 ];
+        %tmp.22 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.23 25 29 42 ];
+        %tmp.23 = getv %tmp.22 :COLOR_LT_GRAY;
+        symbol [ Graphics %tmp.24 25 44 52 ];
+        %tmp.24 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.25 25 53 64 ];
+        %tmp.25 = getv %tmp.24 :COLOR_BLACK;
+        invoke %tmp.20 %tmp.21(%tmp.23, %tmp.25);
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 26 8 ]
+        %tmp.26 = lgetv %dc;
+        symbol [ dc %tmp.26 26 8 10 ];
+        symbol [ drawText %tmp.27 26 11 19 ];
+        %tmp.27 = getv function %tmp.26 :drawText;
+        %tmp.28 = lgetv %w.1;
+        symbol [ w %tmp.28 27 12 13 ];
+        %tmp.29 = 2;
+        %tmp.30 = div %tmp.28 %tmp.29;
+        %tmp.31 = 15;
+        symbol [ Graphics %tmp.32 28 12 20 ];
+        %tmp.32 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.33 28 21 31 ];
+        %tmp.33 = getv %tmp.32 :FONT_SMALL;
+        %tmp.34 = "HOLE ";
+        %tmp.35 = lgetv %hole.3;
+        symbol [ hole %tmp.35 29 22 26 ];
+        %tmp.36 = add %tmp.34 %tmp.35;
+        %tmp.37 = " | ";
+        %tmp.38 = add %tmp.36 %tmp.37;
+        %tmp.39 = lgetv %direction.4;
+        symbol [ direction %tmp.39 29 37 46 ];
+        %tmp.40 = add %tmp.38 %tmp.39;
+        symbol [ Graphics %tmp.41 30 12 20 ];
+        %tmp.41 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.42 30 21 40 ];
+        %tmp.42 = getv %tmp.41 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.26 %tmp.27(%tmp.30, %tmp.31, %tmp.33, %tmp.40, %tmp.42);
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 34 8 ]
+        %tmp.43 = lgetv %dc;
+        symbol [ dc %tmp.43 34 8 10 ];
+        symbol [ setColor %tmp.44 34 11 19 ];
+        %tmp.44 = getv function %tmp.43 :setColor;
+        symbol [ Graphics %tmp.45 34 20 28 ];
+        %tmp.45 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.46 34 29 40 ];
+        %tmp.46 = getv %tmp.45 :COLOR_WHITE;
+        symbol [ Graphics %tmp.47 34 42 50 ];
+        %tmp.47 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.48 34 51 62 ];
+        %tmp.48 = getv %tmp.47 :COLOR_BLACK;
+        invoke %tmp.43 %tmp.44(%tmp.46, %tmp.48);
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 35 8 ]
+        %tmp.49 = lgetv %dc;
+        symbol [ dc %tmp.49 35 8 10 ];
+        symbol [ drawText %tmp.50 35 11 19 ];
+        %tmp.50 = getv function %tmp.49 :drawText;
+        %tmp.51 = lgetv %w.1;
+        symbol [ w %tmp.51 36 12 13 ];
+        %tmp.52 = 2;
+        %tmp.53 = div %tmp.51 %tmp.52;
+        %tmp.54 = 65;
+        symbol [ Graphics %tmp.55 37 12 20 ];
+        %tmp.55 = getm $.Toybox.Graphics;
+        symbol [ FONT_LARGE %tmp.56 37 21 31 ];
+        %tmp.56 = getv %tmp.55 :FONT_LARGE;
+        %tmp.57 = lgetv %center.6;
+        symbol [ center %tmp.57 38 12 18 ];
+        symbol [ Graphics %tmp.58 39 12 20 ];
+        %tmp.58 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.59 39 21 40 ];
+        %tmp.59 = getv %tmp.58 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.49 %tmp.50(%tmp.53, %tmp.54, %tmp.56, %tmp.57, %tmp.59);
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 43 8 ]
+        %tmp.60 = lgetv %dc;
+        symbol [ dc %tmp.60 43 8 10 ];
+        symbol [ setColor %tmp.61 43 11 19 ];
+        %tmp.61 = getv function %tmp.60 :setColor;
+        symbol [ Graphics %tmp.62 43 20 28 ];
+        %tmp.62 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.63 43 29 42 ];
+        %tmp.63 = getv %tmp.62 :COLOR_LT_GRAY;
+        symbol [ Graphics %tmp.64 43 44 52 ];
+        %tmp.64 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.65 43 53 64 ];
+        %tmp.65 = getv %tmp.64 :COLOR_BLACK;
+        invoke %tmp.60 %tmp.61(%tmp.63, %tmp.65);
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 44 8 ]
+        %tmp.66 = lgetv %dc;
+        symbol [ dc %tmp.66 44 8 10 ];
+        symbol [ drawText %tmp.67 44 11 19 ];
+        %tmp.67 = getv function %tmp.66 :drawText;
+        %tmp.68 = lgetv %w.1;
+        symbol [ w %tmp.68 45 12 13 ];
+        %tmp.69 = 2;
+        %tmp.70 = div %tmp.68 %tmp.69;
+        %tmp.71 = 115;
+        symbol [ Graphics %tmp.72 46 12 20 ];
+        %tmp.72 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.73 46 21 31 ];
+        %tmp.73 = getv %tmp.72 :FONT_XTINY;
+        %tmp.74 = "YARDS TO CENTER";
+        symbol [ Graphics %tmp.75 48 12 20 ];
+        %tmp.75 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.76 48 21 40 ];
+        %tmp.76 = getv %tmp.75 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.66 %tmp.67(%tmp.70, %tmp.71, %tmp.73, %tmp.74, %tmp.76);
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 52 8 ]
+        %tmp.77 = lgetv %dc;
+        symbol [ dc %tmp.77 52 8 10 ];
+        symbol [ setColor %tmp.78 52 11 19 ];
+        %tmp.78 = getv function %tmp.77 :setColor;
+        symbol [ Graphics %tmp.79 52 20 28 ];
+        %tmp.79 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.80 52 29 42 ];
+        %tmp.80 = getv %tmp.79 :COLOR_DK_GRAY;
+        symbol [ Graphics %tmp.81 52 44 52 ];
+        %tmp.81 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.82 52 53 64 ];
+        %tmp.82 = getv %tmp.81 :COLOR_BLACK;
+        invoke %tmp.77 %tmp.78(%tmp.80, %tmp.82);
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 53 8 ]
+        %tmp.83 = lgetv %dc;
+        symbol [ dc %tmp.83 53 8 10 ];
+        symbol [ drawLine %tmp.84 53 11 19 ];
+        %tmp.84 = getv function %tmp.83 :drawLine;
+        %tmp.85 = 25;
+        %tmp.86 = 175;
+        %tmp.87 = lgetv %w.1;
+        symbol [ w %tmp.87 53 29 30 ];
+        %tmp.88 = 25;
+        %tmp.89 = sub %tmp.87 %tmp.88;
+        %tmp.90 = 175;
+        invoke %tmp.83 %tmp.84(%tmp.85, %tmp.86, %tmp.89, %tmp.90);
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 57 8 ]
+        %tmp.91 = lgetv %dc;
+        symbol [ dc %tmp.91 57 8 10 ];
+        symbol [ setColor %tmp.92 57 11 19 ];
+        %tmp.92 = getv function %tmp.91 :setColor;
+        symbol [ Graphics %tmp.93 57 20 28 ];
+        %tmp.93 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.94 57 29 42 ];
+        %tmp.94 = getv %tmp.93 :COLOR_LT_GRAY;
+        symbol [ Graphics %tmp.95 57 44 52 ];
+        %tmp.95 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.96 57 53 64 ];
+        %tmp.96 = getv %tmp.95 :COLOR_BLACK;
+        invoke %tmp.91 %tmp.92(%tmp.94, %tmp.96);
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 59 8 ]
+        %tmp.97 = lgetv %dc;
+        symbol [ dc %tmp.97 59 8 10 ];
+        symbol [ drawText %tmp.98 59 11 19 ];
+        %tmp.98 = getv function %tmp.97 :drawText;
+        %tmp.99 = lgetv %w.1;
+        symbol [ w %tmp.99 60 12 13 ];
+        %tmp.100 = 4;
+        %tmp.101 = div %tmp.99 %tmp.100;
+        %tmp.102 = 205;
+        symbol [ Graphics %tmp.103 61 12 20 ];
+        %tmp.103 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.104 61 21 31 ];
+        %tmp.104 = getv %tmp.103 :FONT_XTINY;
+        %tmp.105 = "FRONT";
+        symbol [ Graphics %tmp.106 63 12 20 ];
+        %tmp.106 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.107 63 21 40 ];
+        %tmp.107 = getv %tmp.106 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.97 %tmp.98(%tmp.101, %tmp.102, %tmp.104, %tmp.105, %tmp.107);
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 66 8 ]
+        %tmp.108 = lgetv %dc;
+        symbol [ dc %tmp.108 66 8 10 ];
+        symbol [ drawText %tmp.109 66 11 19 ];
+        %tmp.109 = getv function %tmp.108 :drawText;
+        %tmp.110 = lgetv %w.1;
+        symbol [ w %tmp.110 67 12 13 ];
+        %tmp.111 = 3;
+        %tmp.112 = mul %tmp.110 %tmp.111;
+        %tmp.113 = 4;
+        %tmp.114 = div %tmp.112 %tmp.113;
+        %tmp.115 = 205;
+        symbol [ Graphics %tmp.116 68 12 20 ];
+        %tmp.116 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.117 68 21 31 ];
+        %tmp.117 = getv %tmp.116 :FONT_XTINY;
+        %tmp.118 = "BACK";
+        symbol [ Graphics %tmp.119 70 12 20 ];
+        %tmp.119 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.120 70 21 40 ];
+        %tmp.120 = getv %tmp.119 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.108 %tmp.109(%tmp.114, %tmp.115, %tmp.117, %tmp.118, %tmp.120);
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 74 8 ]
+        %tmp.121 = lgetv %dc;
+        symbol [ dc %tmp.121 74 8 10 ];
+        symbol [ setColor %tmp.122 74 11 19 ];
+        %tmp.122 = getv function %tmp.121 :setColor;
+        symbol [ Graphics %tmp.123 74 20 28 ];
+        %tmp.123 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.124 74 29 40 ];
+        %tmp.124 = getv %tmp.123 :COLOR_WHITE;
+        symbol [ Graphics %tmp.125 74 42 50 ];
+        %tmp.125 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.126 74 51 62 ];
+        %tmp.126 = getv %tmp.125 :COLOR_BLACK;
+        invoke %tmp.121 %tmp.122(%tmp.124, %tmp.126);
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 76 8 ]
+        %tmp.127 = lgetv %dc;
+        symbol [ dc %tmp.127 76 8 10 ];
+        symbol [ drawText %tmp.128 76 11 19 ];
+        %tmp.128 = getv function %tmp.127 :drawText;
+        %tmp.129 = lgetv %w.1;
+        symbol [ w %tmp.129 77 12 13 ];
+        %tmp.130 = 4;
+        %tmp.131 = div %tmp.129 %tmp.130;
+        %tmp.132 = 25;
+        symbol [ Graphics %tmp.133 78 12 20 ];
+        %tmp.133 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.134 78 21 31 ];
+        %tmp.134 = getv %tmp.133 :FONT_SMALL;
+        %tmp.135 = lgetv %front.5;
+        symbol [ front %tmp.135 79 12 17 ];
+        symbol [ Graphics %tmp.136 80 12 20 ];
+        %tmp.136 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.137 80 21 40 ];
+        %tmp.137 = getv %tmp.136 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.127 %tmp.128(%tmp.131, %tmp.132, %tmp.134, %tmp.135, %tmp.137);
+[ "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc" 83 8 ]
+        %tmp.138 = lgetv %dc;
+        symbol [ dc %tmp.138 83 8 10 ];
+        symbol [ drawText %tmp.139 83 11 19 ];
+        %tmp.139 = getv function %tmp.138 :drawText;
+        %tmp.140 = lgetv %w.1;
+        symbol [ w %tmp.140 84 12 13 ];
+        %tmp.141 = 3;
+        %tmp.142 = mul %tmp.140 %tmp.141;
+        %tmp.143 = 4;
+        %tmp.144 = div %tmp.142 %tmp.143;
+        %tmp.145 = 235;
+        symbol [ Graphics %tmp.146 85 12 20 ];
+        %tmp.146 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.147 85 21 31 ];
+        %tmp.147 = getv %tmp.146 :FONT_SMALL;
+        %tmp.148 = lgetv %back.7;
+        symbol [ back %tmp.148 86 12 16 ];
+        symbol [ Graphics %tmp.149 87 12 20 ];
+        %tmp.149 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.150 87 21 40 ];
+        %tmp.150 = getv %tmp.149 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.138 %tmp.139(%tmp.144, %tmp.145, %tmp.147, %tmp.148, %tmp.150);
+C__Users_Eduardo_Documents_PROJECT_HCI_GOLF_source_HCI_GOLFView_mc_11_40_89_4_stop:
+    }
+}
+[ @file = "C:\Users\Eduardo\Documents\PROJECT\HCI-GOLF\source\HCI-GOLFView.mc"; @line = 2; ]
+<init> {
+}
