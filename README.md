@@ -1,2 +1,4 @@
 # UNOGarminGolfer
 **Garmin Golfer**: An automated smartwatch caddy for Garmin wearables that tracks shot distances, leverages gesture controls, and recommends the ideal golf club using GPS data and personal shot averages.
+
+This existing project code was created by the Monkey C extension in VS Code, specifically the new watch app project creation command. This works on top of the downloaded SDK / devices provided through the ConnectIQ SDK manager. After creating the template project, changes were made to change the API version to select one that supports the Forerunner 165 which is the watch we will use, and then that watch was added to the product list. The only other changes are minor repo cleaning / updates, nothing code-related. The watch simulator builds by simply running the code, as shown in the demonstration video.
