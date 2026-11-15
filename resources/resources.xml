@@ -1,0 +1,7 @@
+<resources>
+    <jsonData id="hole01" filename="jsonData/hole01.json"/>
+    <jsonData id="hole02" filename="jsonData/hole02.json"/>
+    <jsonData id="hole03" filename="jsonData/hole03.json"/>
+    <jsonData id="hole04" filename="jsonData/hole04.json"/>
+    <jsonData id="hole05" filename="jsonData/hole05.json"/>
+</resources>
